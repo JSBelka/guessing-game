@@ -8,7 +8,7 @@ class GuessingGame {
         this.maximum = max;
     }
     guess() {
-        return Math.floor((this.minimum + this.maximum) / 2);
+        return Math.ceil((this.minimum + this.maximum) / 2);
     }
     lower() {
         this.maximum = this.guess();
