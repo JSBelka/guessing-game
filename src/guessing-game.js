@@ -11,10 +11,10 @@ class GuessingGame {
         return Math.floor((this.minimum + this.maximum) / 2);
     }
     lower() {
-        this.maximum = this.guess() - 1;
+        this.minimum = this.guess() - 1;
     }
     greater() {
-        this.minimum = this.guess() + 1;
+        this.maximum = this.guess() + 1;
     }
 }
 
